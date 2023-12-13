@@ -1,0 +1,75 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw; 
+    background-image: linear-gradient(to bottom left, #b53616 60%,orange); 
+    overflow-x: hidden;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 1rem; 
+}
+main section {
+    width: 50%;
+    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+main section:nth-child(1){
+    background-color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+main section:nth-child(2){
+    align-self: stretch;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    background-image: url(./images/orangeDougnut.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    /* border: 3px solid black; */
+   
+}
+section form {
+    width: 100%;
+}
+section form div {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 90%;
+    border: 1px solid black;
+    border-radius:3rem;
+    margin-top: 1rem;
+    padding: 6px;
+    font-size: 14px;
+}
+section form div img {
+    width: 30px;
+    height:30px;
+}
+
+@media screen and (max-width:700px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+    height:90vh;
+  }  
+  main section {
+    width: 100%;
+  }
+ 
+}
